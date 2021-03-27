@@ -51,7 +51,8 @@ label_1.grid(columnspan=2)
 label_2.grid(row=1, column=3)
 
 #criar e instanciar a textbox direto
-textbox1 = Entry(tela_inicio).grid(row=0, column=0, sticky=W)
+textbox1 = Entry(tela_inicio)
+textbox1.grid(row=0, column=0, sticky=W)
 
 
 #comando obrigatório para não fechar a janela imediatamente   
