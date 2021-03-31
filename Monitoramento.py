@@ -6,22 +6,46 @@ from tkinter import *
 from tkinter import filedialog as dlg
 import pandas as pd
 
+
+# Variáveis -------------------------------------------
+
+objetos = 0
+
+# Funções ---------------------------------------------
+
+def carregarArquivo ():
+    print()
+
+def rodarPlanilha():
+    print()
+
+def enviarEmail():
+    print()
+
+def escreverEmail():
+    print()
+
+# Interface Gráfica -----------------------------------
+
 root = Tk()
 
 #Janela principal
-root.title = ("Monitoramento SEDEX")
+root.title = "Monitoramento SEDEX"
 root.geometry("640x480+300+300")
 root["bg"] = "grey"
 
 #Botões
 carregar_arquivo = Button(root,
-             text="Carregar Arquivo Macro")
+             text="Carregar Arquivo Macro",
+             command = carregarArquivo)
 
 rodar_planilha = Button(root,
-             text="Rodar Planilha")
+             text="Rodar Planilha",
+             command = rodarPlanilha)
 
 enviar_email = Button(root,
-             text="Enviar E-mail")
+             text="Enviar E-mail",
+             command = enviarEmail)
 
 #Labels
 
@@ -79,7 +103,7 @@ cee_ok = Label(frame_unidades, text = "   ", bg="grey", bd=1, relief=GROOVE).gri
 
 #Instanciar widgets
 
-top.grid(columnspan=3)
+top.grid(columnspan=63)
 
 carregar_arquivo.grid(row=1,columnspan=2)
 rodar_planilha.grid(row=2,column=0)
@@ -87,4 +111,8 @@ enviar_email.grid(row=2,column=1)
 
 frame_unidades.grid(row=4,column=0)
 
-root.mainloop()
+
+
+
+
+## OK da planilha e do email enviado, criar função com If Else
