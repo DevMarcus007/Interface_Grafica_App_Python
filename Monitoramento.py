@@ -9,7 +9,7 @@ import pandas as pd
 root = Tk()
 
 #Janela principal
-root.title = "Monitoramento SEDEX"
+root.title = ("Monitoramento SEDEX")
 root.geometry("640x480+300+300")
 root["bg"] = "grey"
 
