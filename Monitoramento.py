@@ -11,10 +11,13 @@ import pandas as pd
 
 objetos = 0
 
+
 # Funções ---------------------------------------------
 
 def carregarArquivo ():
-    print()
+    objetos = pd.read_excel (dlg.askopenfilename(), sheet_name = "Dados Benfica")
+    #arquivo = pd.read_excel(objetos, sheet_name = "Dados Benfica")
+    print(objetos)
 
 def rodarPlanilha():
     print()
@@ -103,7 +106,7 @@ cee_ok = Label(frame_unidades, text = "   ", bg="grey", bd=1, relief=GROOVE).gri
 
 #Instanciar widgets
 
-top.grid(columnspan=63)
+top.grid(columnspan=3)
 
 carregar_arquivo.grid(row=1,columnspan=2)
 rodar_planilha.grid(row=2,column=0)
@@ -114,5 +117,5 @@ frame_unidades.grid(row=4,column=0)
 
 
 
-
+root.mainloop()
 ## OK da planilha e do email enviado, criar função com If Else

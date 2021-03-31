@@ -1,3 +1,4 @@
+
 #dicionario
 cdd = {"aps":"aps@", "brx":"brx@", "cbu":"cbu@"}
 
