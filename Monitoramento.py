@@ -4,23 +4,19 @@
 
 from tkinter import *
 from tkinter import filedialog as dlg
+from time import sleep
 import pandas as pd
-
-
-# Variáveis -------------------------------------------
-
-objetos = 0
-
 
 # Funções ---------------------------------------------
 
 def carregarArquivo ():
-    objetos = pd.read_excel (dlg.askopenfilename(), sheet_name = "Dados Benfica")
-    #arquivo = pd.read_excel(objetos, sheet_name = "Dados Benfica")
-    print(objetos)
+    global objetos 
+    objetos = pd.read_excel (dlg.askopenfilename(), sheet_name = 2)
+    return objetos
 
 def rodarPlanilha():
-    print()
+    matriz = objetos[["Objeto", "Situação"]]
+    print(matriz)
 
 def enviarEmail():
     print()
